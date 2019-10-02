@@ -1,0 +1,28 @@
+import React, {useState} from 'react'
+import { Modal } from '../src/components/modal'
+import {Button} from "../src/components/button"
+
+export default {
+  title: 'Modal',
+}
+
+export const Base = () => {
+	const [isOpen, setIsOpen] = useState(false)
+
+	const handleOpenModal = () => {
+		setIsOpen(true)
+	}
+
+	const handleCloseModal = () => {
+		setIsOpen(false)
+	}
+
+	return (
+		<div>
+			<Button onClick={handleOpenModal}>
+				Launch modal
+			</Button>
+			<Modal modalActive={isOpen} handleCloseClick={handleCloseModal} />
+		</div>
+	)
+}

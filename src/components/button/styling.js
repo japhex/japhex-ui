@@ -20,6 +20,10 @@ const Button = styled(motion.button)`
 		background:${props => props.primaryHover ? props.primaryHover : primaryHover};
 	}
 	
+	&:focus {
+		outline:0;
+	}
+	
 	span {
 		padding:13px 16px 13px 0;
 	}

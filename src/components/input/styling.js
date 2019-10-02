@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion'
 
 const Input = styled(motion.input)`
-	background-color: rgb(41, 41, 41);
-	border: 1px solid rgb(41, 41, 41);
+	background-color: hsl(210, 36%, 96%);
+	border: 1px solid hsl(210, 36%, 100%);
 	border-radius: 4px;
 	box-shadow: rgba(0, 0, 0, 0) 0px 2px 6px 0px;
-	color: rgb(204, 204, 204);
+	color: hsl(0, 0%, 10%);
 	display: flex;
 	font-size: 14px;
 	font-weight: 400;
@@ -16,7 +16,7 @@ const Input = styled(motion.input)`
 	padding:0 15px;
 	margin-bottom: 10px;
 	transition-duration: 0.25s;
-	transition-property: border, boxShadow, backgroundColor;
+	transition-property: border;
 	transition-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1);
 	user-select: text;
 	width:200px;
@@ -24,10 +24,7 @@ const Input = styled(motion.input)`
 	
 	&:focus {
 		outline:0;
-		background-color: rgb(0, 0, 0);
-		border: 1px solid rgb(40, 69, 122);
-		border-bottom-left-radius: 4px;
-		border-bottom-right-radius: 4px;
+		border:1px solid hsl(212, 33%, 89%);
 	}
 `
 
