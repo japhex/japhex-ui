@@ -19,6 +19,7 @@ export const ModalContainer = styled.div`
 
 const Modal = styled(motion.div)`
 	display: flex;
+	flex-direction:column;
 	width:30vw;
 	height:60vh;
 	background:${colorWhite};
@@ -32,6 +33,10 @@ const IconCloseBase = styled(IconClose)`
 	height:30px;
 	cursor:pointer;
 	margin-left:auto;
+`
+
+export const ModalContent = styled.div`
+	padding:0 15px 15px 15px;
 `
 
 export const ModalStyled = (props) => <Modal {...props} />

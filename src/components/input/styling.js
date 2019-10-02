@@ -1,10 +1,11 @@
 import * as React from "react";
 import styled from 'styled-components';
 import { motion } from 'framer-motion'
+import {colorInputBorder, colorInputFocusBorder, colorInputBg} from "../../utils/styleguide/globals"
 
 const Input = styled(motion.input)`
-	background-color: hsl(210, 36%, 96%);
-	border: 1px solid hsl(210, 36%, 100%);
+	background-color: ${colorInputBg};
+	border: 1px solid ${colorInputBorder};
 	border-radius: 4px;
 	box-shadow: rgba(0, 0, 0, 0) 0px 2px 6px 0px;
 	color: hsl(0, 0%, 10%);
@@ -24,7 +25,7 @@ const Input = styled(motion.input)`
 	
 	&:focus {
 		outline:0;
-		border:1px solid hsl(212, 33%, 89%);
+		border:1px solid ${colorInputFocusBorder};
 	}
 `
 

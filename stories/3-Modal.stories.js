@@ -22,7 +22,9 @@ export const Base = () => {
 			<Button onClick={handleOpenModal}>
 				Launch modal
 			</Button>
-			<Modal modalActive={isOpen} handleCloseClick={handleCloseModal} />
+			<Modal modalActive={isOpen} handleCloseClick={handleCloseModal}>
+				This is a modal
+			</Modal>
 		</div>
 	)
 }
