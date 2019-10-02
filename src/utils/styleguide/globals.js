@@ -5,6 +5,7 @@ export const primaryHover = 'hsl(216, 98%, 25%)'
 
 // Colours
 export const colorWhite = 'hsl(0,100%,100%)'
+export const colorGrey = 'hsl(210,10%,90%)'
 
 // Elements
 export const colorDropShadow = 'hsl(211, 27%, 70%)'

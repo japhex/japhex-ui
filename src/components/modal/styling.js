@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from 'styled-components';
 import IconClose from './../../utils/icons/icon-close.svg'
 import { motion } from 'framer-motion'
-import {colorWhite, colorDropShadow, colorModalBg} from "../../utils/styleguide/globals"
+import {colorWhite, colorGrey, colorDropShadow, colorModalBg} from "../../utils/styleguide/globals"
 
 
 export const ModalContainer = styled.div`
@@ -15,6 +15,7 @@ export const ModalContainer = styled.div`
 	left:0;
 	width:100vw;
 	height:100vh;
+	font-family:arial;
 `
 
 const Modal = styled(motion.div)`
@@ -37,6 +38,18 @@ const IconCloseBase = styled(IconClose)`
 
 export const ModalContent = styled.div`
 	padding:0 15px 15px 15px;
+`
+
+export const ModalHeader = styled.header`
+	display: flex;
+	padding:5px 5px 0;
+`
+
+export const ModalTitle = styled.div`
+	margin:10px;
+	border-bottom:1px solid ${colorGrey};
+	font-weight:bold;
+	width:100%;
 `
 
 export const ModalStyled = (props) => <Modal {...props} />

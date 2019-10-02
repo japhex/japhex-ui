@@ -28,3 +28,31 @@ export const Base = () => {
 		</div>
 	)
 }
+
+// With Sections
+export const Sections = () => {
+	const [isOpen, setIsOpen] = useState(false)
+
+	const handleOpenModal = () => {
+		setIsOpen(true)
+	}
+
+	const handleCloseModal = () => {
+		setIsOpen(false)
+	}
+
+	return (
+		<div>
+			<Button onClick={handleOpenModal}>
+				Launch modal
+			</Button>
+			<Modal modalActive={isOpen} handleCloseClick={handleCloseModal} title={'Modal title'}>
+				This is a modal
+			</Modal>
+		</div>
+	)
+}
+
+Sections.story = {
+	name: 'With sections'
+}

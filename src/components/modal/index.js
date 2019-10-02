@@ -1,14 +1,17 @@
 import React from 'react'
-import {ModalContainer, ModalStyled, ModalContent, IconCloseStyled} from './styling'
+import {ModalContainer, ModalStyled, ModalHeader, ModalContent, ModalTitle, IconCloseStyled} from './styling'
 
 export const Modal = (props) => {
-	const {modalActive, customClose, children, handleCloseClick} = props
+	const {modalActive, title, customClose, children, handleCloseClick} = props
 
 	return (
 		modalActive &&
 		<ModalContainer>
 			<ModalStyled {...props}>
-				{!customClose && <IconCloseStyled onClick={handleCloseClick} />}
+				<ModalHeader>
+					{title && <ModalTitle>{title}</ModalTitle>}
+					{!customClose && <IconCloseStyled onClick={handleCloseClick} />}
+				</ModalHeader>
 				<ModalContent>
 					{children}
 				</ModalContent>
