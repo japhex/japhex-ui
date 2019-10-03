@@ -8,6 +8,7 @@ const Input = styled(motion.input)`
 	border: 1px solid ${colorInputBorder};
 	border-radius: 4px;
 	box-shadow: rgba(0, 0, 0, 0) 0px 2px 6px 0px;
+	box-sizing:border-box;
 	color: hsl(0, 0%, 10%);
 	display: flex;
 	font-size: 14px;
