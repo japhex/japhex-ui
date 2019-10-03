@@ -6,6 +6,7 @@ export const TabsContainer = styled.div`
 	font-size:14px;
 	display: flex;
 	margin-left:10px;
+	justify-content: ${props => props.centered ? 'center' : 'left'};
 `
 
 export const TabsContentContainer = styled.div`

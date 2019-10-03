@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {TabStyled, TabContentStyled, TabsContainer, TabsContentContainer} from './styling'
 
-export const Tabs = ({children}) => {
+export const Tabs = ({children, centered}) => {
 	const initialTab = children[0].props.label
 	const [activeTab, setActiveTab] = useState(initialTab)
 
@@ -11,7 +11,7 @@ export const Tabs = ({children}) => {
 
 	return (
 		<div>
-			<TabsContainer>
+			<TabsContainer centered={centered}>
 				{children.map(tab => (
 					<TabStyled onClick={() => onClick(tab.props.label)} activeTab={activeTab} tabLabel={tab.props.label}>{tab.props.label}</TabStyled>
 				))}
