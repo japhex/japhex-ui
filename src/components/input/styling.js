@@ -19,7 +19,7 @@ const Input = styled(motion.input)`
 	transition-property: border;
 	transition-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1);
 	user-select: text;
-	width:200px;
+	width:100%;
 	-webkit-box-direction: normal;
 	box-sizing:border-box;
 	
