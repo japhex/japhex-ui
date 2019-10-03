@@ -12,10 +12,9 @@ const Input = styled(motion.input)`
 	display: flex;
 	font-size: 14px;
 	font-weight: 400;
-	height: 42px;
+	height: 35px;
 	line-height: 20px;
 	padding:0 15px;
-	margin-bottom: 10px;
 	transition-duration: 0.25s;
 	transition-property: border;
 	transition-timing-function: cubic-bezier(0.2, 0.8, 0.4, 1);
