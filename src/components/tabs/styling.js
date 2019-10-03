@@ -5,7 +5,7 @@ export const TabsContainer = styled.div`
 	font-family:arial;
 	font-size:14px;
 	display: flex;
-	margin-left:10px;
+	margin-left:${props => props.centered ? '0' : '10px'};
 	justify-content: ${props => props.centered ? 'center' : 'left'};
 `
 
