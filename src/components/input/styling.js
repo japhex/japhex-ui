@@ -4,12 +4,12 @@ import { motion } from 'framer-motion'
 import {colorInputBorder, colorInputFocusBorder, colorInputBg} from "../../utils/styleguide/globals"
 
 const Input = styled(motion.input)`
+	display: inline-flex;
 	background-color: ${colorInputBg};
 	border: 1px solid ${colorInputBorder};
 	border-radius: 4px;
 	box-shadow: rgba(0, 0, 0, 0) 0px 2px 6px 0px;
 	color: hsl(0, 0%, 10%);
-	display: flex;
 	font-size: 14px;
 	font-weight: 400;
 	height: 35px;
