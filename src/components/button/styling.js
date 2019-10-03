@@ -1,10 +1,21 @@
 import * as React from "react";
 import styled from 'styled-components';
 import { motion } from 'framer-motion'
-import {primary, primaryHover, colorWhite} from "../../utils/styleguide/globals"
+import {primary, primaryHover, secondary, secondaryHover, colorWhite} from "../../utils/styleguide/globals"
+
+const buttonType = (type, hover = false) => {
+	switch (type) {
+	case 'primary':
+		return hover ? primaryHover : primary
+	case 'secondary':
+		return hover ? secondaryHover : secondary
+	default:
+		return hover ? primaryHover : primary
+	}
+}
 
 const Button = styled(motion.button)`
-	display: flex;
+	display: inline-flex;
     align-items: center;
     justify-content: center;
 	border:0;
@@ -12,12 +23,12 @@ const Button = styled(motion.button)`
 	font-size:14px;
 	color:${colorWhite};
 	border-radius:4px;
-	background:${props => props.primary ? props.primary : primary};
+	background:${props => buttonType(props.type)};
 	cursor:pointer;
 	padding:0 0 0 16px;
 	
 	&:hover {
-		background:${props => props.primaryHover ? props.primaryHover : primaryHover};
+		background:${props => buttonType(props.type, true)};
 	}
 	
 	&:focus {

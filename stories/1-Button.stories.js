@@ -20,8 +20,8 @@ Icon.story = {
 }
 
 // With primary colour
-export const Primary = () => <Button primary='hsl(262, 43%, 51%)' primaryHover='hsl(261, 47%, 58%)'>Primary</Button>
+export const Primary = () => <Button type='secondary'>Primary</Button>
 
 Primary.story = {
-	name: 'With primary colour'
+	name: 'Secondary'
 }
