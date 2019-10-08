@@ -2,12 +2,12 @@ import React from 'react'
 import {CardStyled, Header, Content} from './styling'
 
 export const Card = (props) => {
-	const {title, children} = props
+	const {titleContent, children} = props
 
 	return (
 		<CardStyled {...props}>
 			<Header>
-				{title}
+				{titleContent}
 			</Header>
 			<Content>
 				{children}

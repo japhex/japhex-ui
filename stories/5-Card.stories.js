@@ -6,7 +6,7 @@ export default {
 }
 
 export const Base = () => (
-	<Card title={'Metallica'}>
+	<Card titleContent={'Metallica'}>
 		test
 	</Card>
 )
