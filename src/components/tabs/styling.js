@@ -1,4 +1,5 @@
 import * as React from "react";
+import { motion } from 'framer-motion'
 import styled from 'styled-components';
 
 export const TabsContainer = styled.div`
@@ -14,7 +15,7 @@ export const TabsContentContainer = styled.div`
 	font-size:14px;
 `
 
-export const Tab = styled.li`
+export const Tab = styled(motion.li)`
 	position:relative;
 	list-style-type: none;
 	padding:10px 40px;
@@ -35,6 +36,10 @@ export const Tab = styled.li`
 	    background:${props => props.activeTab === props.tabLabel ? '#fff' : '#ccc'};
 	    width: 100%;
 	    left: 0;
+	}
+	
+	&:hover {
+		background:${props => props.activeTab === props.tabLabel ? '#fff' : '#fafcff'};
 	}
 `
 

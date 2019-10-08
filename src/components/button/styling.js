@@ -15,7 +15,7 @@ const buttonType = (type, hover = false) => {
 }
 
 const Button = styled(motion.button)`
-	display: inline-flex;
+	display: ${props => props.inline ? 'inline-flex' : 'flex'};
     align-items: center;
     justify-content: center;
 	border:0;
@@ -48,5 +48,5 @@ const Button = styled(motion.button)`
 
 export const ButtonStyled = (props) => {
 	const {children} = props
-	return (<Button whileHover={{ scale: 1.05 }} {...props}>{children}</Button>)
+	return (<Button whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} {...props}>{children}</Button>)
 }

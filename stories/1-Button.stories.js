@@ -25,3 +25,10 @@ export const Primary = () => <Button type='secondary'>Primary</Button>
 Primary.story = {
 	name: 'Secondary'
 }
+
+// Inline
+export const Inline = () => <div><Button inline>Primary</Button><Button inline type='secondary'>Primary</Button></div>
+
+Inline.story = {
+	name: 'Inline'
+}
