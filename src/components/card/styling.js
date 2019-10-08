@@ -7,7 +7,6 @@ const Card = styled(motion.div)`
 	display: flex;
 	flex-direction:column;
     align-items: center;
-    justify-content: center;
 	flex: 1;
 	border:1px solid #d2d8df;
 	border-radius:5px;
