@@ -16,6 +16,7 @@ const Card = styled(motion.div)`
 
 export const Header = styled.div`
 	display: flex;
+	flex-direction:column;
 	padding:5px;
 	border-radius:5px 5px 0 0;
 	box-sizing:border-box;
