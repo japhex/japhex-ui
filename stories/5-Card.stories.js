@@ -8,19 +8,45 @@ export default {
 
 export const Base = () => (
 	<Card titleContent={'Metallica'}>
-		test
+		<CardContent>
+			test
+		</CardContent>
 	</Card>
 )
 
 // Centered
 export const Multiple = () => (
 	<div style={{display:'flex', flexFlow: 'row wrap'}}>
-		<Card titleContent={'Metallica'}>test</Card>
-		<Card titleContent={'Metallica'}>test</Card>
-		<Card titleContent={'Metallica'}>test</Card>
-		<Card titleContent={'Metallica'}>test</Card>
-		<Card titleContent={'Metallica'}>test</Card>
-		<Card titleContent={'Metallica'}>test</Card>
+		<Card titleContent={'Metallica'}>
+			<CardContent>
+				test
+			</CardContent>
+		</Card>
+		<Card titleContent={'Metallica'}>
+			<CardContent>
+				test
+			</CardContent>
+		</Card>
+		<Card titleContent={'Metallica'}>
+			<CardContent>
+				test
+			</CardContent>
+		</Card>
+		<Card titleContent={'Metallica'}>
+			<CardContent>
+				test
+			</CardContent>
+		</Card>
+		<Card titleContent={'Metallica'}>
+			<CardContent>
+				test
+			</CardContent>
+		</Card>
+		<Card titleContent={'Metallica'}>
+			<CardContent>
+				test
+			</CardContent>
+		</Card>
 	</div>
 )
 
