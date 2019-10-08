@@ -1,5 +1,5 @@
 import React from 'react'
-import {CardStyled, Header, Content} from './styling'
+import {CardStyled, Header, Footer, Content} from './styling'
 
 export const Card = (props) => {
 	const {titleContent, children} = props
@@ -9,9 +9,27 @@ export const Card = (props) => {
 			<Header>
 				{titleContent}
 			</Header>
-			<Content>
-				{children}
-			</Content>
+			{children}
 		</CardStyled>
+	)
+}
+
+export const CardContent = (props) => {
+	const { children } = props
+
+	return (
+		<Content {...props}>
+			{children}
+		</Content>
+	)
+}
+
+export const CardFooter = (props) => {
+	const { children } = props
+
+	return (
+		<Footer {...props}>
+			{children}
+		</Footer>
 	)
 }

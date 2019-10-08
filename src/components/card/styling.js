@@ -27,6 +27,17 @@ export const Header = styled.div`
 	border-bottom:1px solid #d2d8df;
 `
 
+export const Footer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+	width: 100%;
+	background:#3e4754;
+    box-sizing: border-box;
+    border-radius:0 0 5px 5px;
+`
+
 export const Content = styled.div`
 	display: flex;
 	padding:5px;

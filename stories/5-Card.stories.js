@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
-import {Card} from "../src/components/card"
-import {Tab, Tabs} from "../src/components/tabs"
+import React from 'react'
+import {Card, CardContent, CardFooter} from "../src/components/card"
+import {Button} from "../src/components/button"
 
 export default {
   title: 'Card',
@@ -26,4 +26,21 @@ export const Multiple = () => (
 
 Multiple.story = {
 	name: 'Multiple'
+}
+
+export const WithFooter = () => (
+	<Card titleContent={'Metallica'}>
+		<CardContent>
+			test
+		</CardContent>
+		<CardFooter>
+			<Button>
+				test button
+			</Button>
+		</CardFooter>
+	</Card>
+)
+
+WithFooter.story = {
+	name: 'With footer'
 }
