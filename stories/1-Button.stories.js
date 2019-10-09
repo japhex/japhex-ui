@@ -1,6 +1,6 @@
 import React from 'react'
-import { Button } from '../src/components/button'
-import IconAdd from '../src/utils/icons/icon-add.svg'
+import { Button } from './../build/index'
+import {IconAdd} from './../build/index'
 
 export default {
   title: 'Button',
