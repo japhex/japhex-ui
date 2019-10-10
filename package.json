@@ -19,6 +19,7 @@
   "dependencies": {
     "framer-motion": "1.6.7",
     "react": "^16.4.0",
+    "react-portal": "4.2.0",
     "styled-components": "4.4.0",
     "webpack": "^4.12.0"
   },
