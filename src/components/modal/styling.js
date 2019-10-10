@@ -22,7 +22,6 @@ const Modal = styled(motion.div)`
 	display: flex;
 	flex-direction:column;
 	width:30vw;
-	height:60vh;
 	background:${colorWhite};
 	border-radius: 3px 3px 5px 5px;
 	box-shadow:${colorDropShadow} 0px 1px 4px;
