@@ -47,7 +47,15 @@ export const Sections = () => {
 				Launch modal
 			</Button>
 			<Modal modalActive={isOpen} handleCloseClick={handleCloseModal} title={'Modal title'}>
-				This is a modal
+				<p>Are you sure you want to delete this gig?</p>
+				<div>
+					<Button inline>
+						Delete
+					</Button>
+					<Button type='secondary' inline>
+						Cancel
+					</Button>
+				</div>
 			</Modal>
 		</div>
 	)

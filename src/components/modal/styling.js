@@ -46,7 +46,6 @@ export const ModalHeader = styled.header`
 
 export const ModalTitle = styled.div`
 	margin:10px;
-	border-bottom:1px solid ${colorGrey};
 	font-weight:bold;
 	width:100%;
 `
